@@ -1,0 +1,7 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+	<title>heart-svg</title>
+	<style>
+		.s0 { fill: none;stroke: #ff89f8;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2 } 
+	</style>
+	<path id="Layer" class="s0" d="m2 17.6q-0.4-1-0.5-2.1 0.1-1.1 0.5-2.1 0.4-1 1.2-1.8l1-1.1 7.8-7.7 7.8 7.7 1 1.1c1.1 1 1.6 2.4 1.7 3.9 0 1.5-0.6 2.9-1.7 3.9-1 1-2.4 1.6-3.8 1.6-1.5 0-2.9-0.6-3.9-1.6l-1.1-1.1-1.1 1.1q-0.7 0.8-1.7 1.2-1.1 0.4-2.1 0.4-1.1 0-2.2-0.4-1-0.4-1.7-1.2-0.8-0.8-1.2-1.8z"/>
+</svg>

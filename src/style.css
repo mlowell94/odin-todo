@@ -1,0 +1,1154 @@
+body {
+    font-size: 16px;
+    margin: 0;
+    background-image: url('assets/potBg.png');
+    animation: bg-slide 2s infinite linear;
+    font-family: 'FOT-Seurat Pro';
+
+    display: flex;
+    height: 100vh;
+    color: white;
+
+}
+
+.container {
+    height: 75vh;
+    width: 75vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 10fr;
+    border: #a1b0c8 groove 4px;
+    background-image: linear-gradient(to right, #010080, #0e3da3, #3b6dbe, #709bd2, #adc9e4);
+}
+
+.container-top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: #a1b0c8 groove 3px;
+    grid-column: 1/4;
+}
+
+.container-top h4 {
+    font-size: 32px;
+    margin: 0 0 0 12px;
+}
+
+.container-top img {
+    width: 115px;
+    height: 35px;
+    align-self: center;
+    margin-right: .5%;
+}
+
+.nav {
+    display: flex;
+    grid-row: 2 /3;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 3% 3% 3% 3%;
+    background-color: #e4a4d9;
+
+    position: sticky;
+    top: 0;
+
+    overflow: hidden;
+}
+
+h5 {
+    font-size: 36px;
+    align-self: flex-start;
+    margin-left: 14%;
+    margin: 0;
+}
+
+.nav h5 {
+    font-size: 2.5vw;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 70%;
+
+    flex-direction: column;
+    font-size: 24px;
+    color: white
+
+}
+
+li {
+    font-size: 1.5vw;
+    transition: text-shadow .25s ease;
+    width: 500px;
+}
+
+li img {
+    width: 4vw;
+    vertical-align: middle;
+    position: relative;
+}
+
+.main {
+    background-color: white;
+    color: black;
+    position: relative;
+    overflow: overlay;
+}
+
+.marquee-sort {
+    background-color: #d4d0c8;
+    border-bottom: #a1b0c8 solid 2px;
+    height: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.marquee-sort select {
+    width: 20%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.marquee-sort marquee {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.project-sub img {
+    position: relative;
+}
+
+.new-task {
+    display: none;
+    flex-direction: column;
+    width: 30%;
+
+    position: fixed;
+    top: 25%;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    border: #a1b0c8 groove 5px;
+    background-image: linear-gradient(to right, #010080, #0e3da3, #3b6dbe, #709bd2, #adc9e4);
+    margin: 0 auto;
+    z-index: 2;
+    color: black;
+}
+
+.new-project {
+    display: none;
+    flex-direction: column;
+    width: 30%;
+
+    position: fixed;
+    top: 25%;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    border: #a1b0c8 groove 5px;
+    background-image: linear-gradient(to right, #010080, #0e3da3, #3b6dbe, #709bd2, #adc9e4);
+    margin: 0 auto;
+    z-index: 2;
+    color: black;
+}
+
+.content > img {
+    margin: 1.5% 0 0 1.5%;
+}
+
+.edit-task {
+    display: none;
+    flex-direction: column;
+    width: 30%;
+
+    position: fixed;
+    top: 25%;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    border: #a1b0c8 groove 5px;
+    background-image: linear-gradient(to right, #010080, #0e3da3, #3b6dbe, #709bd2, #adc9e4);
+    margin: 0 auto;
+    z-index: 2;
+}
+
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding: .5% 1% .5% 1%;
+}
+
+.top h5 {
+    margin: 0;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    padding: 6px;
+
+    background-image: url('assets/potBg.png');
+    animation: bg-slide 2s infinite linear;
+
+}
+
+.top img {
+    width: 15px;
+    height: 15px;
+    align-self: center;
+}
+
+.top h5 {
+    font-size: 24px;
+}
+
+input {
+    width: 50%;
+    border: none;
+    padding: 0;
+    height: 2em;
+
+}
+
+label {
+    height: 2em;
+    width: fit-content;
+}
+
+textarea {
+    width: 50%;
+    resize: none;
+    border: none;
+    padding: 0;
+    
+}
+
+select {
+    width: 50%;
+    border: none;
+    padding: 0;
+    height: 2em;
+}
+
+form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5%;
+}
+
+button {
+    width: 50%;
+    margin: 6px auto;
+}
+
+#project {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    padding: 5%;
+}
+
+#project div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#project img {
+    width: 50%;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+#project p {
+    margin: 0;
+    text-align: center;
+}
+
+.open-task {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 75%;
+    position: fixed;
+    top: 25%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border: #a1b0c8 groove 5px;
+    background-color: #010080;
+    margin: 0 auto;
+}
+
+.task-info {
+    display: flex;
+    flex-direction: column;
+
+    padding: 6px;
+
+    background-image: url('assets/potBg.png');
+    animation: bg-slide 2s infinite linear;
+}
+
+.checklist-container {
+    flex-direction: column;
+    max-height: 175px;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+
+.checklist-container div {
+    width: 50%;
+}
+
+#checklist-entry {
+    width: 88%;
+    padding-left: 1%;
+}
+
+#task-form > button {
+    position: relative;
+    left: 63%;
+    width: 25%;
+    margin: 0;
+    margin-top: 2.5%;
+}
+
+#project-form > button {
+    position: relative;
+    left: 63%;
+    width: 25%;
+    margin: 0;
+    margin-top: 2.5%;
+}
+
+#first-label + div {
+    background: white;
+    width: 48.5%;
+}
+
+
+
+.checklist-container img {
+    right: 1.5%;
+    position: static;
+}
+
+.checklist-container > div {
+    margin: 0;
+    align-self: flex-end;
+}
+
+#first-label {
+    position: absolute;
+    left: 6px;
+}
+
+.checklist-container > div + div {
+    margin: 0;
+    justify-content: space-between;
+}
+
+#test {
+    width: auto;
+}
+
+#minus {
+    position: relative;
+    margin-left: 10%;
+    right: 0;
+}
+
+#subDiv {
+    justify-content: flex-end;
+    margin: 0;
+    width: 100%;
+}
+
+#tasks {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2% 0 2%;
+
+}
+
+.task {
+    padding: 0 2% 0 2%;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.task-head h4 {
+    margin: 0;
+}
+
+.task-content {
+    padding: 0 2% 0 2%;
+    overflow: hidden;
+}
+
+.task-content img {
+    position: relative;
+    float: right;
+    margin: 1% 0% 0% 0%;
+    right: -1.5%;
+}
+
+.task-content img + img {
+    margin-right: 2%;
+}
+
+.task-content div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.unopened {
+    max-height: 0;
+    transition: max-height .5s cubic-bezier(0, 1, 0, 1);
+}
+
+.open {
+    max-height: 1000px;
+    transition: max-height .5s ease;
+}
+
+.task-header img {
+    position: absolute;
+    top: 35%;
+    right: 0;
+    transition: all ease .5s;
+}
+
+.flipped {
+    transform: rotate(180deg);
+}
+
+#active {
+    display: block;
+}
+
+#inactive {
+    display: none;
+}
+
+h4 {
+    margin-bottom: 0;
+}
+
+.check-container-main {
+    flex-direction: column;
+    position: relative;
+}
+
+.check-label {
+    position: absolute;
+}
+
+.check-container-sub {
+    flex-direction: column;
+    width: fit-content;
+    align-self: flex-end;
+    align-items: flex-end;
+    text-align: right;
+}
+
+#desc-open {
+    max-width: 210px;
+    text-align: right;
+}
+
+#notes-open {
+    max-width: 210px;
+    text-align: right;
+}
+
+.task-content > div {
+    border-bottom: dotted pink 2px;
+}
+
+
+.exit-task:hover {
+    cursor: pointer;
+}
+
+.exit-project:hover {
+    cursor: pointer;
+}
+
+.exit-edit-task:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#checklist-plus:hover {
+    cursor: pointer;
+}
+
+#minus:hover {
+    cursor: pointer;
+}
+
+.exit-task:active {
+    content:url('assets/xclicked.png');
+}
+
+.exit-project:active {
+    content:url('assets/xclicked.png');
+}
+
+.exit-edit-task:active {
+    content:url('assets/xclicked.png');
+}
+
+#subDiv {
+    justify-content: space-between;
+    margin: 0;
+    width: 85%;
+}
+
+#newDiv {
+    width: 100%;
+}
+
+#subDiv label {
+    max-height: 4em;
+    height: auto;
+}
+
+.check-container-sub {
+    width: 200px;
+}
+
+.check-container-sub + .check-container-sub {
+    border-top: solid white 1px;
+}
+
+li:hover {
+    cursor: pointer;
+    text-shadow: 3px 3px 3px black;
+}
+
+.task-content img:hover {
+    cursor: pointer;
+}
+
+li:hover img {
+    animation: hover .75s infinite;
+}
+
+.project-sub img:hover {
+    animation: bounce .25s linear;
+}
+
+
+@keyframes bg-slide {
+    0% {
+        background-position-x: 0;
+        background-position-y: 0;
+    }
+
+    50% {
+        background-position-x: -23px;
+        background-position-y: 21px;
+    }
+
+    100% {
+        background-position-x: -46px;
+        background-position-y: 42px;
+    }
+}
+
+@keyframes hover {
+    0% {
+        top: 0;
+    }
+
+    12.5% {
+        top: -6.25%;
+    }
+
+    25% {
+        top: -12.5%;
+    }
+
+    37.5% {
+        top: -6.25%;
+    }
+
+    50% {
+        top: 0
+    }
+
+    62.5% {
+        top: 6.25%;
+    }
+
+    75% {
+        top: 12.5%;
+    }
+
+    87.5% {
+        top: 6.25%;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        top: 0%;
+    }
+    50% {
+        top: -15%;
+    }
+    75% {
+        top: 0%;
+    }
+    87.5% {
+        top: -7.5%;
+    }
+    93.75% {
+        top: 0%;
+    }
+    96.875% {
+        top: -3.75%;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+
+@font-face {
+    font-family: 'FOT-Seurat Pro';
+    src: url('assets/FOT-Seurat.otf');
+}
+
+
+/*BEGIN MEDIA QUERY*/
+
+@media screen and (max-width: 1000px) {
+
+    @keyframes hover {
+        0% {
+            top: -35%;
+        }
+    
+        12.5% {
+            top: -41.25%;
+        }
+    
+        25% {
+            top: -57.5%;
+        }
+    
+        37.5% {
+            top: -41.25%;
+        }
+    
+        50% {
+            top: -35%;
+        }
+    
+        62.5% {
+            top: -29.25%;
+        }
+    
+        75% {
+            top: -23.5%;
+        }
+    
+        87.5% {
+            top: -29.25%;
+        }
+    
+        100% {
+            top: -35%;
+        }
+    }
+    
+    body {
+        font-size: 16px;
+        margin: 0;
+        background-image: none;
+        background-color: #fdd8df;
+        font-family: 'FOT-Seurat Pro';
+
+        height: auto;
+        display: block;
+    }
+
+    .container {
+        height: auto;
+        width: auto;
+        margin: auto;
+        display: block;
+        border: none;
+        background-image: none;
+    }
+
+    .container-top {
+        display: none;
+    }
+
+    .main {
+        background-color: transparent;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+
+        padding: 3% 3% 3% 3%;
+        border: #a1b0c8 groove 4px;
+        background-image: linear-gradient(to right, #010080, #0e3da3, #3b6dbe, #709bd2, #adc9e4);
+
+        position: sticky;
+        top: 0;
+    }
+
+    h5 {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+        color: black;
+        text-shadow: 1px 1px 3px white;
+        font-size: 12px;
+    }
+
+    li + li {
+        margin-left: 5%;
+    }
+
+    .new-task {
+        display: none;
+        flex-direction: column;
+        width: 75%;
+
+        position: fixed;
+        top: 25%;
+        left: 0;
+        right: 0;
+        text-align: center;
+
+        border: #a1b0c8 groove 5px;
+        background-color: #010080;
+        margin: 0 auto;
+        z-index: 2;
+    }
+
+    #task-form > button {
+        position: relative;
+        left: 60%;
+        width: fit-content;
+        margin: 0;
+        margin-top: 2.7975%;
+    }
+
+    #project-form > button {
+        position: relative;
+        left: 56%;
+        width: fit-content;
+        margin: 0;
+        margin-top: 2.5%;
+    }
+
+    .new-project {
+        display: none;
+        flex-direction: column;
+        width: 75%;
+
+        position: fixed;
+        top: 25%;
+        left: 0;
+        right: 0;
+        text-align: center;
+
+        border: #a1b0c8 groove 5px;
+        background-color: #010080;
+        margin: 0 auto;
+    }
+
+    .edit-task {
+        display: none;
+        flex-direction: column;
+        width: 75%;
+
+        position: fixed;
+        top: 25%;
+        left: 0;
+        right: 0;
+        text-align: center;
+
+        border: #a1b0c8 groove 5px;
+        background-color: #010080;
+        margin: 0 auto;
+        z-index: 2;
+    }
+
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        padding: .5% 1% .5% 1%;
+    }
+
+    .top h5 {
+        margin: 0;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        padding: 6px;
+
+        background-image: url('assets/potBg.png');
+        animation: bg-slide 2s infinite linear;
+    
+    }
+
+    .top img {
+        width: 15px;
+        height: 15px;
+        align-self: center;
+    }
+    
+    input {
+        width: 50%;
+        border: none;
+        padding: 0;
+        height: 2em;
+
+    }
+
+    .nav h5 {
+        font-size: 12px;
+    }
+
+    li {
+        font-size: 12px;
+        width: auto;
+        position: relative;
+    }
+
+    li img {
+        width: 48px;
+        vertical-align: middle;
+        position: absolute;
+        right: 50%;
+        top: -35%;
+        z-index: -1;
+    }
+
+    label {
+        height: 2em;
+        width: fit-content;
+    }
+
+    textarea {
+        width: 50%;
+        resize: none;
+        border: none;
+        padding: 0;
+        
+    }
+
+    .content > img {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+
+    select {
+        width: 50%;
+        border: none;
+        padding: 0;
+        height: 2em;
+    }
+
+    form div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2.5%;
+    }
+
+    button {
+        width: 50%;
+        margin: 6px auto;
+    }
+
+    #project {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 1fr;
+        padding: 5%;
+    }
+
+    #project div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #project img {
+        width: 50%;
+    }
+
+    #project p {
+        margin: 0;
+        text-align: center;
+    }
+
+    .open-task {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 75%;
+        position: fixed;
+        top: 25%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        border: #a1b0c8 groove 5px;
+        background-color: #010080;
+        margin: 0 auto;
+    }
+
+    .task-info {
+        display: flex;
+        flex-direction: column;
+
+        padding: 6px;
+
+        background-image: url('assets/potBg.png');
+        animation: bg-slide 2s infinite linear;
+    }
+
+    .checklist-container {
+        flex-direction: column;
+        max-height: 175px;
+        overflow: scroll;
+    }
+
+    .checklist-container div {
+        width: 50%;
+    }
+
+    #checklist-entry {
+        width: 88%;
+        padding-left: 1%;
+    }
+
+    #first-label + div {
+        background: white;
+        width: 50%;
+    }
+
+    .checklist-container img {
+        right: 1.5%;
+        position: static;
+    }
+
+    .checklist-container > div {
+        margin: 0;
+        align-self: flex-end;
+    }
+
+    #first-label {
+        position: absolute;
+        left: 6px;
+    }
+
+    .checklist-container > div + div {
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    #test {
+        width: auto;
+    }
+
+    #minus {
+        position: relative;
+        margin-left: 10%;
+    }
+
+    #subDiv {
+        justify-content: flex-end;
+        margin: 0;
+        width: 100%;
+    }
+
+    #tasks {
+        display: flex;
+        flex-direction: column;
+        padding: 0 2% 0 2%;
+
+    }
+
+    .task {
+        padding: 0 2% 0 2%;
+    }
+
+    .task-header {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .task-head h4 {
+        margin: 0;
+    }
+
+    .task-content {
+        padding: 0 2% 0 2%;
+        overflow: hidden;
+        }
+
+    .task-content div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .task-content img {
+        position: relative;
+        float: right;
+        margin: 1% 0% 0% 0%;
+        right: -1.5%;
+    }
+    
+    .task-content img + img {
+        margin-right: 2%;
+    }
+
+    .unopened {
+        max-height: 0;
+        transition: max-height .5s cubic-bezier(0, 1, 0, 1);
+    }
+
+    .open {
+        max-height: 1000px;
+        transition: max-height .5s ease;
+    }
+
+    .task-header img {
+        position: absolute;
+        top: 35%;
+        right: 0;
+        transition: all ease .5s;
+    }
+
+    .flipped {
+        transform: rotate(180deg);
+    }
+
+    #active {
+        display: block;
+    }
+
+    #inactive {
+        display: none;
+    }
+    
+    h4 {
+        margin-bottom: 0;
+    }
+
+    .check-container-main {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .check-label {
+        position: absolute;
+    }
+
+    .check-container-sub {
+        flex-direction: column;
+        width: fit-content;
+        align-self: flex-end;
+        align-items: flex-end;
+    }
+
+    #desc-open {
+        max-width: 210px;
+        text-align: right;
+    }
+
+    #notes-open {
+        max-width: 210px;
+        text-align: right;
+    }
+
+    .task-content > div {
+        border-bottom: dotted pink 2px;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    #subDiv {
+        justify-content: space-between;
+        margin: 0;
+        width: 85%;
+    }
+
+    #newDiv {
+        width: 100%;
+    }
+
+    #subDiv label {
+        max-height: 4em;
+        height: auto;
+    }
+
+    .check-container-sub {
+        width: 200px;
+    }
+
+    .check-container-sub + .check-container-sub {
+        border-top: solid white 1px;
+    }
+}
