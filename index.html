@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do list</title>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="container-top">
+            <h4>to-do-list 2000</h4>
+            <img src="images/buttons.png" alt="Windows 2000 style buttons">
+        </div>
+        <div class="nav">
+            <h5>tasks</h5>
+            <ul>
+                <li id="projects-button">projects <img src="images/projectsButton.png" alt="Open projects"></li>
+                <li id="new-project-button">new project <img src="images/new-project.png" alt="Create new project"></li>
+                <li id="new-task-button">new task <img src="images/new-task.png" alt="Create new task"></li>
+            </ul>
+        </div>
+        <div class="new-task">
+            <div class="top">
+                <h5>new task</h5>
+                <img src="images/xbutton.png" alt="microsoft style x button" class="exit-task">
+            </div>
+            <form action="post" id="task-form">
+                <div>
+                    <label for="title">task name</label>
+                    <input type="text" id="title" name="title" required minlength="1">
+                </div>
+                <div>
+                    <label for="desc">description</label>
+                    <textarea id="desc" name="desc" maxlength="150"></textarea>
+                </div>
+                <div>
+                    <label for="due-date">due date</label>
+                    <input type="date" id="due-date" name="due-date" value="2022-10-01">
+                </div>
+                <div>
+                    <label for="priority">priority</label>
+                    <select type="select" id="priority" name="priority">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="project-select">project</label>
+                    <select name="project" id="project-select">
+                        <option value="placeholder">placeholder</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="notes">notes</label>
+                    <textarea id="notes" name="notes"></textarea>
+                </div>
+                <div class="checklist-container">
+                    <label for="checklist-entry" id="first-label">checklist</label>
+                    <div>
+                        <input type="text" name="checklist-entry" id="checklist-entry">
+                        <img src="images/plus.svg" alt="add to checklist" id="checklist-plus">
+                    </div>
+                </div>
+                <button type="submit" class="add-task">add task!</button>
+            </form>
+        </div>
+        <div class="new-project">
+            <div class="top">
+                <h5>new project</h5>
+                <img src="images/xbutton.png" alt="microsoft style x button" class="exit-project">
+            </div>
+            <form action="post" id="project-form">
+                <div>
+                    <label for="title">project name</label>
+                    <input type="text" id="title" name="title" required minlength="1">
+                </div>
+                <div>
+                    <label for="due-date">due date</label>
+                    <input type="date" id="due-date" name="due-date" value="2022-10-01">
+                </div>
+                <div>
+                    <label for="priority">priority</label>
+                    <select type="select" id="priority" name="priority">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+                <button type="submit" class="add-project">add project</button>
+            </form>
+        </div>
+        <div class="edit-task">
+            <div class="top">
+                <h5>edit task</h5>
+                <img src="images/xbutton.png" alt="microsoft style x button" class="exit-edit-task">
+            </div>
+            <form action="post" id="task-form">
+                <div>
+                    <label for="title">task name</label>
+                    <input type="text" id="title" name="title" required minlength="1">
+                </div>
+                <div>
+                    <label for="desc">description</label>
+                    <textarea id="desc" name="desc" maxlength="150"></textarea>
+                </div>
+                <div>
+                    <label for="due-date">due date</label>
+                    <input type="date" id="due-date" name="due-date" value="2022-10-01">
+                </div>
+                <div>
+                    <label for="priority">priority</label>
+                    <select type="select" id="priority" name="priority">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="notes">notes</label>
+                    <textarea id="notes" name="notes"></textarea>
+                </div>
+                <div class="checklist-container">
+                    <label for="checklist-entry" id="first-label">checklist</label>
+                    <div>
+                        <input type="text" name="checklist-entry" id="checklist-entry">
+                        <img src="images/plus.svg" alt="add to checklist" id="checklist-edit-plus">
+                    </div>
+                </div>
+                <button type="submit" class="edit-task-submit">edit task!</button>
+            </form>
+        </div>
+        <div class="main">
+            <div class="marquee-sort">
+                <marquee behavior="scroll" direction="left">Due Soon: Finish this website (October 10th, 2022)</marquee>
+                <span>sort</span>
+                <select name="sort" id="sort">
+                    <option value="alphabet-a">Alphabetical (A to Z)</option>
+                    <option value="alphabet-z">Alphabetical (Z to A)</option>
+                    <option value="priority-one">Priority (Highest to Lowest)</option>
+                    <option value="priority-two">Priority (Lowest to Highest)</option>
+                    <option value="date-one">Date (Ending Soonest - Latest)</option>
+                    <option value="date-two">Date (Ending Latest - Soonest)</option>
+                </select>
+            </div>
+            <div class="content" id="project">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
